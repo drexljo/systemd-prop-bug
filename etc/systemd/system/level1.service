@@ -1,0 +1,13 @@
+[Unit]
+Description=Level 1 test service
+After=level0.service
+Requires=level0.service
+Wants=level10.service
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+ExecStart=/usr/local/bin/testscript "Level 1"
+
+[Install]
+WantedBy=multi-user.target

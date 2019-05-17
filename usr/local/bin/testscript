@@ -1,0 +1,4 @@
+#!/bin/bash
+
+date +"%F - %T: $1 started" >> /tmp/test.log
+exit 0
